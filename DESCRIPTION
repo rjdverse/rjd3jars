@@ -1,5 +1,5 @@
 Package: rjd3jars
-Title: External jars for 'rjdverse' R packages
+Title: External jars for 'rjdverse' R Packages
 Version: 0.0.1
 Authors@R: 
     person(given = "Tanguy", 
