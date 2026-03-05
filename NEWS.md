@@ -19,7 +19,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 * Minimal Java version is now 21
 
 
-## [0.0.1] - 2025-15-12
+## [0.0.1] - 2025-12-15
 
 ### Added
 
