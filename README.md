@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![CRAN
-status](https://www.r-pkg.org/badges/version/rjd3jars)](https://CRAN.R-project.org/package=rjd3jars)
+status](https://www.r-pkg.org/badges/version/rjd3jars)](https://cran.r-project.org/web/packages/rjd3jars/index.html)
 [![Mentioned in Awesome Official
 Statistics](https://awesome.re/mentioned-badge.svg)](https://github.com/SNStatComp/awesome-official-statistics-software)
 
@@ -40,13 +40,4 @@ To get the current development version of **{rjd3jars}** from
 ``` r
 # install.packages("pak")
 pak::pak("rjdverse/rjd3jars")
-#> ℹ Loading metadata database✔ Loading metadata database ... done
-#>  
-#> ✔ All system requirements are already installed.
-#>   
-#> ℹ No downloads are needed
-#> ℹ Installing system requirements
-#> ℹ Executing `sudo sh -c apt-get -y update`
-#> ℹ Executing `sudo sh -c R CMD javareconf`
-#> ✔ 1 pkg + 1 dep: kept 2 [8.2s]
 ```
