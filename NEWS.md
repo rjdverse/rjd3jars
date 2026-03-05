@@ -21,7 +21,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 * Minimal Java version is now 21
 
 
-## 0.0.1 - 2025-12-15
+## [0.0.1] - 2025-12-15
 
 ### Added
 
@@ -29,4 +29,5 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
 [Unreleased]: https://github.com/rjdverse/rjd3jars/compare/v0.0.2...HEAD
-[0.0.2]: https://github.com/rjdverse/rjd3jars/releases/tag/v0.0.2
+[0.0.2]: https://github.com/rjdverse/rjd3jars/compare/660578fc5bb5c228cc5041c91a208213ad556481...v0.0.2
+[0.0.1]: https://github.com/rjdverse/rjd3jars/tree/660578fc5bb5c228cc5041c91a208213ad556481
