@@ -1,6 +1,6 @@
 Package: rjd3jars
 Title: External jars for 'rjdverse' R Packages
-Version: 0.0.1.9000
+Version: 0.0.2.9000
 Authors@R: 
     person(given = "Tanguy", 
            family = "Barthelemy", role = c("aut", "cre"),
