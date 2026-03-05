@@ -10,7 +10,7 @@
 \format{
 An object of class \code{integer} of length 1.
 
-An object of class \code{numeric} of length 1.
+An object of class \code{integer} of length 1.
 }
 \usage{
 get_java_version()
@@ -19,10 +19,15 @@ current_java_version
 
 minimal_java_version
 }
+\value{
+\code{get_java_version()} returns the current java installed and usable
+version. It's an integer.
+}
 \description{
 Java Utility Functions
 }
 \examples{
-get_java_version()
+print(minimal_java_version)
+print(get_java_version())
 }
 \keyword{datasets}
