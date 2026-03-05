@@ -4,8 +4,12 @@ NULL
 #' @title Java Utility Functions
 #' @name jd3_utilities
 #'
+#' @returns `get_java_version()` returns the current java installed and usable
+#' version. It's an integer.
+#'
 #' @examples
-#' get_java_version()
+#' print(minimal_java_version)
+#' print(get_java_version())
 #' @export
 get_java_version <- function() {
     .jinit()
