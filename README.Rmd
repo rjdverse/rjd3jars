@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 # {rjd3jars}
 
 <!-- badges: start -->
-[![CRAN status](https://www.r-pkg.org/badges/version/rjd3jars)](https://cran.r-project.org/web/packages/rjd3jars/index.html)
+[![CRAN status](https://www.r-pkg.org/badges/version/rjd3jars)](https://CRAN.R-project.org/package=rjd3jars)
 [![Mentioned in Awesome Official Statistics ](https://awesome.re/mentioned-badge.svg)](https://github.com/SNStatComp/awesome-official-statistics-software)
 
 [![R-CMD-check](https://github.com/rjdverse/rjd3jars/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rjdverse/rjd3jars/actions/workflows/R-CMD-check.yaml)
@@ -25,8 +25,6 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 Utility package in JDemetra+ 3.x R ecosystem. Contains functions used in other `rjd3` packages and has to be systematically installed before using any other rjd3 package. 
-
-## Installation
 
 ## Installation
 

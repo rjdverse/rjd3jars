@@ -2,7 +2,7 @@ Version: 1.0
 
 RestoreWorkspace: No
 SaveWorkspace: No
-AlwaysSaveHistory: Default
+AlwaysSaveHistory: No
 
 EnableCodeIndexing: Yes
 UseSpacesForTab: Yes
@@ -19,4 +19,8 @@ LineEndingConversion: Posix
 BuildType: Package
 PackageUseDevtools: Yes
 PackageInstallArgs: --no-multiarch --with-keep.source
-PackageRoxygenize: rd,collate,namespace
+PackageBuildBinaryArgs: --no-multiarch
+PackageCheckArgs: --no-multiarch --as-cran
+PackageRoxygenize: rd,collate,namespace,vignette
+
+UseNativePipeOperator: Yes

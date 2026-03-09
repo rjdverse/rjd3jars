@@ -6,7 +6,7 @@
 <!-- badges: start -->
 
 [![CRAN
-status](https://www.r-pkg.org/badges/version/rjd3jars)](https://cran.r-project.org/web/packages/rjd3jars/index.html)
+status](https://www.r-pkg.org/badges/version/rjd3jars)](https://CRAN.R-project.org/package=rjd3jars)
 [![Mentioned in Awesome Official
 Statistics](https://awesome.re/mentioned-badge.svg)](https://github.com/SNStatComp/awesome-official-statistics-software)
 
@@ -17,8 +17,6 @@ Statistics](https://awesome.re/mentioned-badge.svg)](https://github.com/SNStatCo
 Utility package in JDemetra+ 3.x R ecosystem. Contains functions used in
 other `rjd3` packages and has to be systematically installed before
 using any other rjd3 package.
-
-## Installation
 
 ## Installation
 
