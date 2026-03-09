@@ -8,6 +8,14 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+
+* New JARS
+
+### Added
+
+* New `pom.xml` to update JARS
+
 
 ## [0.0.2] - 2026-03-05
 
