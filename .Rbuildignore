@@ -27,6 +27,7 @@ cran-comments.md
 ^reconf\.sh$
 
 ^pom\.xml$
+^pom\.xml\.versionsBackup$
 
 ^CITATION\.cff$
 ^LICENSE.md$

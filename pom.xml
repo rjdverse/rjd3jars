@@ -11,8 +11,6 @@
 	<description>Usage: mvn -Pcopy-jars</description>
 
 	<properties>
-		<jdplus-main.version>3.7.1</jdplus-main.version>
-        <protobuf-maven-plugin.version>5.0.2</protobuf-maven-plugin.version>
         <protobuf.version>4.34.0</protobuf.version>
 	</properties>
 

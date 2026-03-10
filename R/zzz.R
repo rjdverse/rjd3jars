@@ -12,8 +12,13 @@ NULL
 #' print(get_java_version())
 #' @export
 get_java_version <- function() {
-    .jinit()
-    jversion <- .jcall("java.lang.System", "S", "getProperty", "java.version")
+    rJava::.jinit()
+    jversion <- rJava::.jcall(
+        obj = "java.lang.System",
+        returnSig = "S",
+        method = "getProperty",
+        "java.version"
+    )
     jversion <- as.integer(regmatches(
         x = jversion,
         m = regexpr(pattern = "^(\\d+)", text = jversion)
@@ -41,7 +46,7 @@ minimal_java_version <- 21L
 }
 
 .onLoad <- function(libname, pkgname) {
-    result <- .jpackage(pkgname, lib.loc = libname)
+    result <- rJava::.jpackage(pkgname, lib.loc = libname)
     if (!result) stop("Loading java packages failed", call. = FALSE)
 
     if (is.null(getOption("summary_info"))) {
