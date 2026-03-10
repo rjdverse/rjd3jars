@@ -1,7 +1,15 @@
 
+## Submission of {rjd3jars} v0.0.3 - 2026-03-09
+
+### Changes
+
+* New JARS for protobuf
+
+
 ## Re-Submission - 2026-03-05
 
 * I put .lycheeignore in .RbuildIgnore
+
 
 ## Submission of {rjd3jars} v0.0.2 - 2026-03-05
 
