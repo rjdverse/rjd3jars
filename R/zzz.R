@@ -13,7 +13,12 @@ NULL
 #' @export
 get_java_version <- function() {
     rJava::.jinit()
-    jversion <- rJava::.jcall("java.lang.System", "S", "getProperty", "java.version")
+    jversion <- rJava::.jcall(
+        obj = "java.lang.System",
+        returnSig = "S",
+        method = "getProperty",
+        "java.version"
+    )
     jversion <- as.integer(regmatches(
         x = jversion,
         m = regexpr(pattern = "^(\\d+)", text = jversion)
