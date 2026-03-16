@@ -13,5 +13,5 @@ jobs:
 
       - uses: jbangdev/jbang-action@v0.136.0
         with:
-          script: com.github.nbbrd.heylogs:heylogs-cli:0.14.1:bin
+          script: com.github.nbbrd.heylogs:heylogs-cli:0.15.0:bin
           scriptargs: "check NEWS.md"
