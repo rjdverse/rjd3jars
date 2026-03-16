@@ -10,13 +10,13 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.0.3] - 2026-03-09
 
-### Changed
-
-* New JARS
-
 ### Added
 
 * New `pom.xml` to update JARS
+
+### Changed
+
+* New JARS related to version [34.0](https://github.com/protocolbuffers/protobuf/releases/tag/v34.0)
 
 
 ## [0.0.2] - 2026-03-05
@@ -35,7 +35,7 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
-* JARS files
+* Initial JARS related to version [33.1](https://github.com/protocolbuffers/protobuf/releases/tag/v33.1)
 
 
 [Unreleased]: https://github.com/rjdverse/rjd3jars/compare/v0.0.3...HEAD
