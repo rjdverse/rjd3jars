@@ -3,6 +3,7 @@
 export(current_java_version)
 export(get_java_version)
 export(minimal_java_version)
+importFrom(rJava,.jaddClassPath)
 importFrom(rJava,.jcall)
 importFrom(rJava,.jinit)
 importFrom(rJava,.jpackage)
