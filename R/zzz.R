@@ -1,39 +1,12 @@
-#' @importFrom rJava .jpackage .jcall .jinit
+#' @include protos.R
+#' @importFrom rJava .jpackage
 NULL
-
-#' @title Java Utility Functions
-#' @name jd3_utilities
-#'
-#' @examples
-#' get_java_version()
-#' @export
-get_java_version <- function() {
-    .jinit()
-    jversion <- .jcall("java.lang.System", "S", "getProperty", "java.version")
-    jversion <- as.integer(regmatches(jversion, regexpr(pattern = "^(\\d+)", text = jversion)))
-    return(jversion)
-}
-
-#' @rdname jd3_utilities
-#' @export
-current_java_version <- get_java_version()
-
-#' @rdname jd3_utilities
-#' @export
-minimal_java_version <- 17
-
-.onAttach <- function(libname, pkgname) {
-    if (current_java_version < minimal_java_version) {
-        packageStartupMessage(sprintf("Your java version is %s. %s or higher is needed.",
-                                      current_java_version, minimal_java_version))
-    }
-}
 
 .onLoad <- function(libname, pkgname) {
     result <- .jpackage(pkgname, lib.loc = libname)
-    if (!result) stop("Loading java packages failed")
+    if (!result)
+        stop("Loading java packages failed")
 
-    if (is.null(getOption("summary_info"))) {
-        options(summary_info = TRUE)
-    }
+    PROTO_DIR <<- system.file("proto", package = pkgname)
 }
+
