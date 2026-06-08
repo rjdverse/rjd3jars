@@ -1,15 +1,17 @@
-#' @importFrom rJava .jpackage .jcall .jinit
-NULL
 
-#' @title Java Utility Functions
-#' @name jd3_utilities
+#' @title Extract the Java installed version
+#' @name java-version
 #'
 #' @returns `get_java_version()` returns the current java installed and usable
 #' version. It's an integer.
+#' `minimal_java_version` is the minimal java version accepted currently by
+#' JDemetra+.
 #'
 #' @examples
 #' print(minimal_java_version)
 #' print(get_java_version())
+#'
+#' @importFrom rJava .jcall .jinit
 #' @export
 get_java_version <- function() {
     rJava::.jinit()
@@ -26,11 +28,11 @@ get_java_version <- function() {
     return(jversion)
 }
 
-#' @rdname jd3_utilities
+#' @rdname java-version
 #' @export
 current_java_version <- get_java_version()
 
-#' @rdname jd3_utilities
+#' @rdname java-version
 #' @export
 minimal_java_version <- 21L
 
@@ -45,7 +47,12 @@ minimal_java_version <- 21L
     }
 }
 
+#' @importFrom rJava .jpackage .jaddClassPath
 .onLoad <- function(libname, pkgname) {
+    jar_dir <- file.path(libname, pkgname, "inst", "java")
+    jars <- list.files(jar_dir, pattern = "\\.jar$", full.names = TRUE,
+                       all.files = TRUE)
+    rJava::.jaddClassPath(jars)
     result <- rJava::.jpackage(pkgname, lib.loc = libname)
     if (!result) stop("Loading java packages failed", call. = FALSE)
 
