@@ -11,14 +11,14 @@
 	<description>Usage: mvn -Pcopy-jars</description>
 
 	<properties>
-        <protobuf.version>4.34.0</protobuf.version>
+		<jdplus-main.version>3.7.2-SNAPSHOT</jdplus-main.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
-            <groupId>com.google.protobuf</groupId>
-            <artifactId>protobuf-java</artifactId>
-            <version>${protobuf.version}</version>
+			<groupId>eu.europa.ec.joinup.sat</groupId>
+			<artifactId>jdplus-sa-base-core</artifactId>
+			<version>${jdplus-main.version}</version>
 		</dependency>
 	</dependencies>
 

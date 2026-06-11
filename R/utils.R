@@ -34,3 +34,14 @@ reload_tsproviders<-function(){
     jfac <- .jcall(TSFACTORY,  "Ljdplus/toolkit/base/api/timeseries/TsFactory;", "ofServiceLoader")
     .jcall( TSFACTORY, "V", "setDefault", jfac)
 }
+
+#' Reload all seasonal adjustment factories
+#'
+#' @export
+#'
+#' @examplesIf check_java_version()
+#' reload_safactories()
+reload_safactories<-function(){
+    .jcall("jdplus/sa/base/api/SaManager", "V", "reload")
+}
+
