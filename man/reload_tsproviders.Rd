@@ -6,6 +6,9 @@
 \usage{
 reload_tsproviders()
 }
+\value{
+invisibly \code{NULL}
+}
 \description{
 Reload all the time series providers
 }
