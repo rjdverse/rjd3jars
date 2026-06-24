@@ -19,7 +19,6 @@
 #' check_java_version()
 #'
 #' @importFrom rJava .jcall .jinit
-#' @export
 get_java_version <- function() {
     rJava::.jinit()
     jversion <- rJava::.jcall(
