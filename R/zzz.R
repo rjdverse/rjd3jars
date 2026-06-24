@@ -79,12 +79,5 @@ check_java_version <- function(silent = TRUE, startup = TRUE) {
     }
 
     # Check Java version
-    has_java <- check_java_version(silent = FALSE, startup = TRUE)
-
-    # Reload Java dico, providers and factories
-    if (has_java) {
-        reload_dictionaries()
-        reload_tsproviders()
-        reload_safactories()
-    }
+    check_java_version(silent = FALSE, startup = TRUE)
 }

@@ -5,6 +5,7 @@ TSFACTORY <- "jdplus/toolkit/base/api/timeseries/TsFactory"
 #' @returns invisibly \code{NULL}
 #'
 #' @importFrom rJava .jcall
+#' @export
 #'
 #' @examplesIf check_java_version()
 #' reload_dictionaries()
@@ -22,6 +23,7 @@ reload_dictionaries <- function() {
 #' @returns invisibly \code{NULL}
 #'
 #' @importFrom rJava .jcall
+#' @export
 #'
 #' @examplesIf check_java_version()
 #' reload_tsproviders()
@@ -38,6 +40,7 @@ reload_tsproviders <- function() {
 #' @title Reload all seasonal adjustment factories
 #'
 #' @importFrom rJava .jcall
+#' @export
 #'
 #' @examplesIf check_java_version()
 #' reload_safactories()
