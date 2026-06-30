@@ -18,9 +18,9 @@
 #' print(get_java_version())
 #' check_java_version()
 #'
-#' @importFrom rJava .jcall .jinit
+#' @importFrom rJava .jcall
+#' @export
 get_java_version <- function() {
-    rJava::.jinit()
     jversion <- rJava::.jcall(
         obj = "java.lang.System",
         returnSig = "S",
