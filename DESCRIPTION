@@ -1,6 +1,6 @@
 Package: rjd3jars
 Title: External jars for 'rjdverse' R Packages
-Version: 0.0.3
+Version: 0.0.4
 Authors@R: 
     person(given = "Tanguy", 
            family = "Barthelemy", role = c("aut", "cre"),
@@ -11,7 +11,10 @@ Depends:
 Imports:
     rJava (>= 1.0-6)
 License: EUPL
-SystemRequirements: Java (>= 21)
 Encoding: UTF-8
+Collate: 
+    'utils.R'
+    'zzz.R'
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
+Config/roxygen2/version: 8.0.0
+
