@@ -45,15 +45,15 @@ check_java_version <- function(silent = TRUE, startup = TRUE) {
     if (current_java_version >= minimal_java_version) {
         return(TRUE)
     }
-    text <- sprintf(
+    msg_java <- sprintf(
         "Your java version is %s. %s or higher is needed.",
         current_java_version,
         minimal_java_version
     )
     if (!silent && startup) {
-        packageStartupMessage(text)
+        packageStartupMessage(msg_java)
     } else if (!silent) {
-        message(text)
+        message(msg_java)
     }
     return(FALSE)
 }
@@ -74,7 +74,7 @@ check_java_version <- function(silent = TRUE, startup = TRUE) {
         morePaths = jars_inst
     )
     if (!result) {
-        stop("Loading java packages failed")
+        stop("Loading java packages failed", call. = FALSE)
     }
 
     # Check Java version
