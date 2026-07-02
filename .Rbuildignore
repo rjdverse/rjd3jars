@@ -50,3 +50,5 @@ cran-comments.md
 ^\.lycheeignore$
 ^\.positai$
 ^\.claude$
+
+^heylogs\.properties$
