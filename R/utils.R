@@ -1,4 +1,4 @@
-TSFACTORY <- "jdplus/toolkit/base/api/timeseries/TsFactory"
+tsfactory <- "jdplus/toolkit/base/api/timeseries/TsFactory"
 
 #' @title Reload dictionaries
 #'
@@ -29,11 +29,11 @@ reload_dictionaries <- function() {
 #' reload_tsproviders()
 reload_tsproviders <- function() {
     jfac <- rJava::.jcall(
-        obj = TSFACTORY,
+        obj = tsfactory,
         returnSig = "Ljdplus/toolkit/base/api/timeseries/TsFactory;",
         method = "ofServiceLoader"
     )
-    rJava::.jcall(obj = TSFACTORY, returnSig = "V", method = "setDefault", jfac)
+    rJava::.jcall(obj = tsfactory, returnSig = "V", method = "setDefault", jfac)
     return(invisible(NULL))
 }
 
