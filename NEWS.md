@@ -5,8 +5,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-
 ## [Unreleased]
+
 
 ## [0.0.3] - 2026-03-09
 
@@ -17,7 +17,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ### Changed
 
 * New JARS related to version [34.0](https://github.com/protocolbuffers/protobuf/releases/tag/v34.0)
-
 
 ## [0.0.2] - 2026-03-05
 
@@ -30,13 +29,11 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 * Use `get_java_version()` instead of `current_java_version`
 * Minimal Java version is now 21
 
-
 ## [0.0.1] - 2025-12-15
 
 ### Added
 
 * Initial JARS related to version [33.1](https://github.com/protocolbuffers/protobuf/releases/tag/v33.1)
-
 
 [Unreleased]: https://github.com/rjdverse/rjd3jars/compare/v0.0.3...HEAD
 [0.0.3]: https://github.com/rjdverse/rjd3jars/compare/v0.0.2...v0.0.3
