@@ -5,20 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres
 to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-
 ## [Unreleased]
 
-## [0.0.3] - 2026-03-09
+## [0.0.4] - 2026-07-06
 
+### Added
+
+* New JARS related to JDemetra+ [v3.8.0](https://github.com/jdemetra/jdplus-main/releases/tag/v3.8.0)
 
 ### Changed
 
-* New JARS
+* New JARS related to version [35.1](https://github.com/protocolbuffers/protobuf/releases/tag/v35.1)
+
+## [0.0.3] - 2026-03-09
 
 ### Added
 
 * New `pom.xml` to update JARS
 
+### Changed
+
+* New JARS related to version [34.0](https://github.com/protocolbuffers/protobuf/releases/tag/v34.0)
 
 ## [0.0.2] - 2026-03-05
 
@@ -31,15 +38,14 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 * Use `get_java_version()` instead of `current_java_version`
 * Minimal Java version is now 21
 
-
 ## [0.0.1] - 2025-12-15
 
 ### Added
 
-* JARS files
+* Initial JARS related to version [33.1](https://github.com/protocolbuffers/protobuf/releases/tag/v33.1)
 
-
-[Unreleased]: https://github.com/rjdverse/rjd3jars/compare/v0.0.3...HEAD
+[Unreleased]: https://github.com/rjdverse/rjd3jars/compare/v0.0.4...HEAD
+[0.0.4]: https://github.com/rjdverse/rjd3jars/compare/v0.0.3...v0.0.4
 [0.0.3]: https://github.com/rjdverse/rjd3jars/compare/v0.0.2...v0.0.3
 [0.0.2]: https://github.com/rjdverse/rjd3jars/compare/660578fc5bb5c228cc5041c91a208213ad556481...v0.0.2
 [0.0.1]: https://github.com/rjdverse/rjd3jars/tree/660578fc5bb5c228cc5041c91a208213ad556481

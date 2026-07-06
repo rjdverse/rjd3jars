@@ -1,7 +1,28 @@
 
+## Submission of {rjd3jars} v0.0.4 - 2026-07-03
+
+### R CMD check results
+
+* checked on windows, mac, ubuntu
+
+0 errors | 0 warnings | 0 note
+
+### Changes
+
+* Maintainer will change for next version
+
+
+## Submission of {rjd3jars} v0.0.3 - 2026-03-09
+
+### Changes
+
+* New JARS for protobuf
+
+
 ## Re-Submission - 2026-03-05
 
 * I put .lycheeignore in .RbuildIgnore
+
 
 ## Submission of {rjd3jars} v0.0.2 - 2026-03-05
 

@@ -1,19 +1,32 @@
-#' @importFrom rJava .jpackage .jcall .jinit
-NULL
-
-#' @title Java Utility Functions
-#' @name jd3_utilities
+#' @title Extract the Java installed version
+#'
+#' @param silent Boolean to indicate if a message should be displayed.
+#' @param startup Boolean to indicate if the function is launch at the startup
+#'   of the package.
+#'
+#' @name java-version
 #'
 #' @returns `get_java_version()` returns the current java installed and usable
 #' version. It's an integer.
+#' `minimal_java_version` is the minimal java version accepted currently by
+#' JDemetra+.
+#' `check_java_version()` returns `TRUE` or `FALSE` if the current version of
+#' Java is greater than or equal to the minimum required version.
 #'
 #' @examples
 #' print(minimal_java_version)
 #' print(get_java_version())
+#' check_java_version()
+#'
+#' @importFrom rJava .jcall
 #' @export
 get_java_version <- function() {
-    .jinit()
-    jversion <- .jcall("java.lang.System", "S", "getProperty", "java.version")
+    jversion <- rJava::.jcall(
+        obj = "java.lang.System",
+        returnSig = "S",
+        method = "getProperty",
+        "java.version"
+    )
     jversion <- as.integer(regmatches(
         x = jversion,
         m = regexpr(pattern = "^(\\d+)", text = jversion)
@@ -21,30 +34,49 @@ get_java_version <- function() {
     return(jversion)
 }
 
-#' @rdname jd3_utilities
-#' @export
-current_java_version <- get_java_version()
-
-#' @rdname jd3_utilities
+#' @rdname java-version
 #' @export
 minimal_java_version <- 21L
 
-.onAttach <- function(libname, pkgname) {
-    .current_java_version <- get_java_version()
-    if (.current_java_version < minimal_java_version) {
-        packageStartupMessage(sprintf(
-            "Your java version is %s. %s or higher is needed.",
-            .current_java_version,
-            minimal_java_version
-        ))
+#' @rdname java-version
+#' @export
+check_java_version <- function(silent = TRUE, startup = TRUE) {
+    current_java_version <- get_java_version()
+    if (current_java_version >= minimal_java_version) {
+        return(TRUE)
     }
+    msg_java <- sprintf(
+        "Your java version is %s. %s or higher is needed.",
+        current_java_version,
+        minimal_java_version
+    )
+    if (!silent && startup) {
+        packageStartupMessage(msg_java)
+    } else if (!silent) {
+        message(msg_java)
+    }
+    return(FALSE)
 }
 
+#' @importFrom rJava .jpackage
 .onLoad <- function(libname, pkgname) {
-    result <- .jpackage(pkgname, lib.loc = libname)
-    if (!result) stop("Loading java packages failed", call. = FALSE)
-
-    if (is.null(getOption("summary_info"))) {
-        options(summary_info = TRUE)
+    # Loading Java class
+    jar_dir <- file.path(libname, pkgname, "inst", "java")
+    jars_inst <- list.files(
+        jar_dir,
+        pattern = "\\.jar$",
+        full.names = TRUE,
+        all.files = TRUE
+    )
+    result <- rJava::.jpackage(
+        pkgname,
+        lib.loc = libname,
+        morePaths = jars_inst
+    )
+    if (!result) {
+        stop("Loading java packages failed", call. = FALSE)
     }
+
+    # Check Java version
+    check_java_version(silent = FALSE, startup = TRUE)
 }

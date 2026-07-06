@@ -11,9 +11,8 @@
 	<description>Usage: mvn -Pcopy-jars</description>
 
 	<properties>
-		<jdplus-main.version>3.7.1</jdplus-main.version>
-        <protobuf-maven-plugin.version>5.0.2</protobuf-maven-plugin.version>
-        <protobuf.version>4.34.0</protobuf.version>
+		<jdplus-main.version>3.8.0</jdplus-main.version>
+        <protobuf.version>4.35.1</protobuf.version>
 	</properties>
 
 	<dependencies>
@@ -21,6 +20,11 @@
             <groupId>com.google.protobuf</groupId>
             <artifactId>protobuf-java</artifactId>
             <version>${protobuf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>eu.europa.ec.joinup.sat</groupId>
+			<artifactId>jdplus-sa-base-core</artifactId>
+			<version>${jdplus-main.version}</version>
 		</dependency>
 	</dependencies>
 
