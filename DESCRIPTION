@@ -14,7 +14,7 @@ License: EUPL
 Encoding: UTF-8
 Collate: 
     'rjd3jars-package.R'
-    'zzz.R'
     'utils.R'
+    'zzz.R'
 Roxygen: list(markdown = TRUE)
 Config/roxygen2/version: 8.0.0
