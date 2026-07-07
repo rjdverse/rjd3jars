@@ -63,7 +63,6 @@ check_java_version <- function(silent = TRUE, startup = TRUE) {
     check_java_version(silent = FALSE, startup = TRUE)
 }
 
-
 #' @importFrom rJava .jpackage
 .onLoad <- function(libname, pkgname) {
     # Loading Java class
