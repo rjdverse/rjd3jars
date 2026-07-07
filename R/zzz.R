@@ -58,6 +58,11 @@ check_java_version <- function(silent = TRUE, startup = TRUE) {
     return(FALSE)
 }
 
+.onAttach <- function(libname, pkgname) {
+    # Check Java version
+    check_java_version(silent = FALSE, startup = TRUE)
+}
+
 #' @importFrom rJava .jpackage
 .onLoad <- function(libname, pkgname) {
     # Loading Java class
@@ -76,7 +81,4 @@ check_java_version <- function(silent = TRUE, startup = TRUE) {
     if (!result) {
         stop("Loading java packages failed", call. = FALSE)
     }
-
-    # Check Java version
-    check_java_version(silent = FALSE, startup = TRUE)
 }
