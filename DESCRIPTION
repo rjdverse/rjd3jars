@@ -13,7 +13,8 @@ Imports:
 License: EUPL
 Encoding: UTF-8
 Collate: 
-    'utils.R'
+    'rjd3jars-package.R'
     'zzz.R'
+    'utils.R'
 Roxygen: list(markdown = TRUE)
 Config/roxygen2/version: 8.0.0

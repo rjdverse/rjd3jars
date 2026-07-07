@@ -31,7 +31,12 @@ reload_tsproviders <- function() {
         returnSig = "Ljdplus/toolkit/base/api/timeseries/TsFactory;",
         method = "ofServiceLoader"
     )
-    rJava::.jcall(obj = tsfactory, returnSig = "V", method = "setDefault", jfac)
+    rJava::.jcall(
+        obj = "jdplus/toolkit/base/api/timeseries/TsFactory",
+        returnSig = "V",
+        method = "setDefault",
+        jfac
+    )
     return(invisible(NULL))
 }
 
