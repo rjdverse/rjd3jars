@@ -19,10 +19,9 @@ jobs:
       contents: write
     steps:
       - name: Prepare R package release
-        uses: TanguyBarthelemy/actions/release-r-package@v1.0.1
+        uses: TanguyBarthelemy/actions/release-r-package@v1.0.2
         with:
           tag: ${{ inputs.release_tag }}
           main-branch: "main"
           dev-branch: "develop"
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           change-remotes: "false"

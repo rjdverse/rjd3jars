@@ -1,10 +1,10 @@
 Package: rjd3jars
 Title: External jars for 'rjdverse' R Packages
-Version: 0.0.4.9000
+Version: 0.0.5
 Authors@R: 
     person(given = "Tanguy", 
            family = "Barthelemy", role = c("aut", "cre"),
-           email ="tanguy.barthelemy@insee.fr")
+           email = "timeserieswithjdemetraandr@gmail.com")
 Description: It provides external jars required for the 'rjdverse' (as 'rjd3toolkit', 'rjd3x13' and 'rjd3tramoseats').
 Depends:
     R (>= 4.1)
@@ -13,6 +13,7 @@ Imports:
 License: EUPL
 Encoding: UTF-8
 Collate: 
+    'rjd3jars-package.R'
     'utils.R'
     'zzz.R'
 Roxygen: list(markdown = TRUE)
