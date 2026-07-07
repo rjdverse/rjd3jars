@@ -1,4 +1,11 @@
 
+## Submission of {rjd3jars} v0.0.5 - 2026-07-07
+
+### Changes
+
+* Put the `packageStartupMessage()` call in a .onAttach() instead of a .onLoad() (related to [CRAN policy](https://cran.r-project.org/doc/manuals/r-release/R-exts.html#Load-hooks-1) and discussed [here](https://github.com/rjdverse/rjd3toolkit/discussions/170))
+
+
 ## Submission of {rjd3jars} v0.0.4 - 2026-07-03
 
 ### R CMD check results

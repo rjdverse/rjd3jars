@@ -4,7 +4,7 @@ Version: 0.0.5
 Authors@R: 
     person(given = "Tanguy", 
            family = "Barthelemy", role = c("aut", "cre"),
-           email ="timeserieswithjdemetraandr@gmail.com")
+           email = "timeserieswithjdemetraandr@gmail.com")
 Description: It provides external jars required for the 'rjdverse' (as 'rjd3toolkit', 'rjd3x13' and 'rjd3tramoseats').
 Depends:
     R (>= 4.1)
