@@ -6,6 +6,9 @@
 \usage{
 reload_safactories()
 }
+\value{
+invisibly \code{NULL}
+}
 \description{
 Reload all seasonal adjustment factories
 }

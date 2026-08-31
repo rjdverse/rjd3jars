@@ -7,11 +7,20 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+* New spell check
+
+### Fixed
+
+* `get_java_version` identifies `1.8.XXX` as Java 8.
+
+
 ## [0.0.5] - 2026-07-07
 
 ### Changed
 
-* Update .onAttach() with warning for java version
+* Update `.onAttach()` with warning for Java version
 
 ## [0.0.4] - 2026-07-06
 

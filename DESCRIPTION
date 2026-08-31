@@ -1,11 +1,15 @@
+Type: Package
 Package: rjd3jars
 Title: External jars for 'rjdverse' R Packages
 Version: 0.0.5.9000
 Authors@R: 
     person(given = "Tanguy", 
-           family = "Barthelemy", role = c("aut", "cre"),
+           family = "Barthelemy", role = c("aut", "cre", "cph"),
            email = "timeserieswithjdemetraandr@gmail.com")
 Description: It provides external jars required for the 'rjdverse' (as 'rjd3toolkit', 'rjd3x13' and 'rjd3tramoseats').
+URL: https://github.com/rjdverse/rjd3jars,
+    https://rjdverse.github.io/rjd3jars/
+BugReports: https://github.com/rjdverse/rjd3jars/issues
 Depends:
     R (>= 4.1)
 Imports:
@@ -14,7 +18,12 @@ License: EUPL
 Encoding: UTF-8
 Collate: 
     'rjd3jars-package.R'
+    'java.R'
     'utils.R'
     'zzz.R'
 Roxygen: list(markdown = TRUE)
+SystemRequirements: Java (>= 21)
 Config/roxygen2/version: 8.0.0
+Suggests: 
+    spelling
+Language: en-GB

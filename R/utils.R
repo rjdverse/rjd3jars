@@ -42,6 +42,8 @@ reload_tsproviders <- function() {
 
 #' @title Reload all seasonal adjustment factories
 #'
+#' @returns invisibly \code{NULL}
+#'
 #' @importFrom rJava .jcall
 #' @export
 #'

@@ -9,11 +9,11 @@
 It provides external jars required for the 'rjdverse' (as 'rjd3toolkit', 'rjd3x13' and 'rjd3tramoseats').
 }
 \author{
-\strong{Maintainer}: Tanguy Barthelemy \email{timeserieswithjdemetraandr@gmail.com}
+\strong{Maintainer}: Tanguy Barthelemy \email{timeserieswithjdemetraandr@gmail.com} [copyright holder]
 
 Authors:
 \itemize{
-  \item Tanguy Barthelemy \email{timeserieswithjdemetraandr@gmail.com}
+  \item Tanguy Barthelemy \email{timeserieswithjdemetraandr@gmail.com} [copyright holder]
 }
 
 }
